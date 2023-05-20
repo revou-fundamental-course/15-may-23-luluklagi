@@ -1,60 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-  	<link href='https://fonts.googleapis.com/css?family=Varela Round' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Varela Round' rel='stylesheet'>
     <title>Kaltik</title>
-
-</head>
-
-
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="title">
-            <h1>
-                <span class="title">KALTIK</span> <span class="subtitle">Kalkulator Matematik</span>
-            </h1>
+      <div class="title">
+        <h1>
+          <span class="title">KALTIK</span>
+          <span class="subtitle">Kalkulator Matematik</span>
+        </h1>
+      </div>
+      <div class="deskripsi-persegi">
+        <div class="judul-persegi">
+          <h2>PERSEGI</h2>
         </div>
-
-        <div class="deskripsi-persegi">
-            <div class="judul-persegi">
-                <h2>PERSEGI</h2>
-            </div>
-            <div class="image-persegi"><img src="persegi.png" alt="persegi" width = 120% ></div>
-            <div class="rumus-persegi">L = S x S</div>
-            <div class="keterangan-rumus-persegi">Ket: L = Luas</div>
+        <div class="image-persegi">
+          <img src="persegi.png" alt="persegi" width=120%>
         </div>
-
-        <div class="input">
-          <label for="input-angka">Input panjang sisi:&nbsp</label>
-          <input type="number" id="input-angka" name="input-angka">&nbsp
-          <button class="reset">Reset</button></div>
-
-        <div class="output">
-            <div class="output-luas">
-                <h3>LUAS</h3>
-                <output name="output" for="luas">23</output><br><br>
-                <button class="hitung-luas">Hitung</button></div>
-              
-            <div class="output-keliling">
-                <h3>KELILING</h3>
-                <output name="output" for="keliling">23</output><br><br>
-                <button class="hitung-keliling">Hitung</button></div>
+        <div class="rumus-persegi">
+          <p>Rumus luas: <br> L = S x S <br>
+            <br>
+            <br> Rumus keliling: <br> K = 4 x S
+          </p>
         </div>
-
-        <div class="other-shapes">
-          <h2>OTHERS</h2>
-              </div>
-
-        <div class="end-of-web">brought to you by laeluluk
+        <div class="keterangan-rumus-persegi">
+          <p>Keterangan: <br> L = Luas <br> K = keliling <br> S = panjang sisi </p>
         </div>
+      </div>
+      <div class="input">
+        <form id="squareForm">
+          <label for="panjang_sisi">Panjang sisi:&nbsp</label>
+          <input type="number" id="panjang_sisi" name="panjang_sisi" required> &nbsp <button type="button" id="resetButton">Reset</button>
+      </div>
+      </form>
+      <div class="card-output">
+        <div class="card-luas">
+          <div class="card-title-luas">
+            <h3>LUAS</h3>
+          </div>
+          <div id="output_luas"></div>
+          <div class="button-luas">
+            <button type="button" id="hitung-luas" form="squareForm">Hitung</button>
+          </div>
+        </div>
+        <div class="card-keliling">
+          <div class="card-title-keliling">
+            <h3>KELILING</h3>
+          </div>
+          <div id="output_keliling"></div>
+          <div class="button-keliling">
+            <button type="button" id="hitung-keliling" form="squareForm">Hitung</button>
+          </div>
+        </div>
+      </div>
+      <div class="other-shapes">
+        <h2>OTHERS</h2>
+      </div>
+      <div class="end-of-web">brought to you by laeluluk </div>
     </div>
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
-
 </html>
